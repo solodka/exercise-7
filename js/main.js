@@ -29,10 +29,13 @@ let btnExpenses = document.querySelector('button.expenses-item-btn'),
 let proparlyIncome = document.querySelector('#income').value.split(', '),
     savings = document.querySelector('#savings').checked,
     savingsSum = document.querySelector('#sum').value,
-    savingsPercent = document.querySelector('#percent').value;
-    
-let dataYear = document.querySelector('.year-value').value,
+    savingsPercent = document.querySelector('#percent').value,
+    dataYear = document.querySelector('.year-value').value,
     dataMonth = document.querySelector('.month-value').value,
     dataDay = document.querySelector('.day-value').value;
 
-
+let money, time;
+function start(){
+    money = +prompt("Ваш бюджет на месяц?", '');
+    time = prompt('', '');
+}
